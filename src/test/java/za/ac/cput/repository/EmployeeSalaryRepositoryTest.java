@@ -1,35 +1,31 @@
 package za.ac.cput.repository;
-/* SalaryRepositoryTest.java
- repository for the SalaryRepositoryTest
- Author: Taariq Khan (219231141)
- Date: 2 April 2022
-*/
+
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
-import za.ac.cput.entity.Salary;
-import za.ac.cput.factory.SalaryFactory;
+import za.ac.cput.entity.EmployeeSalary;
+import za.ac.cput.factory.EmployeeSalaryFactory;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 @TestMethodOrder(MethodOrderer.MethodName.class) //alphabetical order naming convention
-class SalaryRepositoryTest
+class EmployeeSalaryRepositoryTest
 {
-    private static SalaryRepository repository = SalaryRepository.getRepository();
-    private static Salary salary = SalaryFactory.createSalary(30000, " perMonthly");
+    private static EmployeeSalaryRepository repository = EmployeeSalaryRepository.getRepository();
+    private static EmployeeSalary employeeSalary = EmployeeSalaryFactory.createEmployeeSalary();
 
     @Test
     void a_create()
     {
-        Salary created = repository.create(salary);//return salary obj else return null
-        assertEquals(salary.getSalaryId(),created.getSalaryId());
+        EmployeeSalary created = repository.create(employeeSalary);//return salary obj else return null
+        assertEquals(employeeSalary.getEmployeeId(),created.getEmployeeId());
         System.out.println("Create : "+created );
     }
 
     @Test
     void b_read()
     {
-        Salary read = repository.read(salary.getSalaryId());
+        EmployeeSalary read = repository.read(employeeSalary.getEmployeeSalaryId());
         assertNotNull(read);
         System.out.println("Read : " + read);
     }

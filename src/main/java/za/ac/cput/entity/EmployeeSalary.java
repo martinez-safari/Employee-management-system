@@ -1,7 +1,12 @@
 package za.ac.cput.entity;
-
+/* EmployeeSalary.java
+ Entity for the EmployeeSalary
+ Author: Taariq Khan (219231141)
+ Date: 2 April 2022
+*/
 public class EmployeeSalary
 {
+    private String EmployeeSalaryId;
     private String employeeId;
     private String salaryId;
 

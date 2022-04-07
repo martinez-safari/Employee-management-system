@@ -1,5 +1,9 @@
 package za.ac.cput.entity;
-
+/* Payroll.java
+ Entity for the Payroll
+ Author: Taariq Khan (219231141)
+ Date: 2 April 2022
+*/
 public class Payroll
 {
     private String payrollId;
@@ -34,7 +38,7 @@ public class Payroll
     @Override
     public String toString()
     {
-        return "Payroll{" + "PayrollId='" + payrollId + '\'' + ", totalPayroll=" + totalPayroll + '}';
+        return "Payroll\n" + "Payroll Id : " + payrollId + "\nTotal Payroll : " + totalPayroll;
     }
 
     public static class Builder

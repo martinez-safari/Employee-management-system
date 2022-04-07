@@ -1,11 +1,15 @@
 package za.ac.cput.entity;
-
+/* Salary.java
+ Entity for the Salary
+ Author: Taariq Khan (219231141)
+ Date: 2 April 2022
+*/
 public class Salary
 {
     private String salaryId;
     private double salaryAmount;
     private String salaryDescription;
-    //private Payroll payroll;
+    private Payroll payroll;
 
     private Salary(Builder builder)
     {
@@ -13,6 +17,8 @@ public class Salary
         this.salaryAmount = builder.salaryAmount;
         this.salaryDescription = builder.salaryDescription;
     }
+
+
 
     public String getSalaryId()
     {
@@ -42,6 +48,16 @@ public class Salary
     public void setSalaryDescription(String salaryDescription)
     {
         this.salaryDescription = salaryDescription;
+    }
+
+    public Payroll getPayroll()
+    {
+        return payroll;
+    }
+
+    public void setPayroll(Payroll payroll)
+    {
+        this.payroll = payroll;
     }
 
     @Override

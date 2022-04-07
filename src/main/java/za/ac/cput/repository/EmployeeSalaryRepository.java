@@ -1,15 +1,11 @@
 package za.ac.cput.repository;
-/* SalaryRepository.java
- repository for the SalaryRepository
- Author: Taariq Khan (219231141)
- Date: 2 April 2022
-*/
-import za.ac.cput.entity.Salary;
+
+import za.ac.cput.entity.EmployeeSalary;
 
 import java.util.HashSet;
 import java.util.Set;
 
-public class SalaryRepository implements ISalaryRepository
+public class EmployeeSalaryRepository implements IEmployeeSalaryRepository
 {
     private static SalaryRepository repository = null;
     private Set<Salary> salaryDB = null;
@@ -87,4 +83,4 @@ public class SalaryRepository implements ISalaryRepository
         return salaryDB;
     }
 }
-
+}
