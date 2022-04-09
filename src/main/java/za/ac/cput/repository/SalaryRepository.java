@@ -2,10 +2,8 @@ package za.ac.cput.repository;
 /* SalaryRepository.java
  repository for the SalaryRepository
  Author: Taariq Khan (219231141)
- Date: 2 April 2022
-*/
+ Date: 2 April 2022*/
 import za.ac.cput.entity.Salary;
-
 import java.util.HashSet;
 import java.util.Set;
 
@@ -48,7 +46,7 @@ public class SalaryRepository implements ISalaryRepository
         }
         return null; */
 
-        //lambda expresions java 8
+        //lambda expressions java 8
         Salary salary = salaryDB.stream()
                 .filter(s -> s.getSalaryId().equals(salaryId))
                 .findAny()

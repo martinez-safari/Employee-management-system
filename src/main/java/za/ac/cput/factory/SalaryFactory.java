@@ -2,8 +2,7 @@ package za.ac.cput.factory;
 /* SalaryFactory.java
  Factory for the SalaryFactory
  Author: Taariq Khan (219231141)
- Date: 2 April 2022
-*/
+ Date: 2 April 2022*/
 import za.ac.cput.entity.Salary;
 import za.ac.cput.util.Helper;
 

@@ -2,14 +2,12 @@ package za.ac.cput.repository;
 /* SalaryRepositoryTest.java
  repository for the SalaryRepositoryTest
  Author: Taariq Khan (219231141)
- Date: 2 April 2022
-*/
+ Date: 2 April 2022*/
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 import za.ac.cput.entity.Salary;
 import za.ac.cput.factory.SalaryFactory;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 @TestMethodOrder(MethodOrderer.MethodName.class) //alphabetical order naming convention

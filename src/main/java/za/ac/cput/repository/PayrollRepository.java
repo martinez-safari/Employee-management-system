@@ -1,13 +1,14 @@
 package za.ac.cput.repository;
-
+/* PayrollRepository.java
+ repository for the PayrollRepository
+ Author: Taariq Khan (219231141)
+ Date: 2 April 2022*/
 import za.ac.cput.entity.Payroll;
-
 import java.util.HashSet;
 import java.util.Set;
 
 public class PayrollRepository implements IPayrollRepository
 {
-
     private static PayrollRepository repository = null;
     private Set<Payroll> payrollDB = null;
 

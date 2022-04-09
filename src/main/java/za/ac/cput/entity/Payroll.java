@@ -2,8 +2,7 @@ package za.ac.cput.entity;
 /* Payroll.java
  Entity for the Payroll
  Author: Taariq Khan (219231141)
- Date: 2 April 2022
-*/
+ Date: 2 April 2022*/
 public class Payroll
 {
     private String payrollId;

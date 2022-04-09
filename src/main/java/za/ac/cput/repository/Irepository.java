@@ -5,7 +5,6 @@ package za.ac.cput.repository;
  Date: 2 April 2022
 */
 public interface Irepository <Object,ID>
-
 {
     Object create(Object object);
     Object read(ID id);

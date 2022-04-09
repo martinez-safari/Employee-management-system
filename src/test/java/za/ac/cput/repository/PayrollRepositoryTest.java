@@ -1,5 +1,8 @@
 package za.ac.cput.repository;
-
+/* PayrollRepositoryTest.java
+ repository for the PayrollRepositoryTest
+ Author: Taariq Khan (219231141)
+ Date: 2 April 2022*/
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
