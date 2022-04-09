@@ -1,4 +1,10 @@
 package za.ac.cput.entity;
+/*
+Employee.java
+AUTHOR Farai Malone Chawora
+Student Number 220145547
+Date April 9 2022
+ */
 
 public class Employee {
     private String employeeId;

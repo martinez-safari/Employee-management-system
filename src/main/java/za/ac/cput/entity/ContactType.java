@@ -1,5 +1,10 @@
 package za.ac.cput.entity;
-
+/*
+ContactType.java
+AUTHOR Farai Malone Chawora
+Student Number 220145547
+Date April 9 2022
+ */
 public class ContactType {
     private String contactId;
     private String email;

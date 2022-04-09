@@ -2,6 +2,12 @@ package za.ac.cput.factory;
 
 import za.ac.cput.entity.ContactType;
 import za.ac.cput.util.Helper;
+/*
+ContactTypeFactory.java
+AUTHOR Farai Malone Chawora
+Student Number 220145547
+Date April 9 2022
+ */
 
 public class ContactTypeFactory {
     public static ContactType createContactType(String email, String phoneNumber){
