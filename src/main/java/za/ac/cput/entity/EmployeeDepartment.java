@@ -1,7 +1,17 @@
 package za.ac.cput.entity;
 
 public class EmployeeDepartment {
-    public String employeeId, deptId;
+    private String employeeId;
+    private String deptId;
+
+    private EmployeeDepartment() {
+    }
+
+    private EmployeeDepartment(Builder builder) {
+        this.employeeId = builder.employeeId;
+        this.deptId = builder.deptId;
+
+    }
 
     public String getEmployeeId() {
         return employeeId;
@@ -25,5 +35,30 @@ public class EmployeeDepartment {
                 "employeeId='" + employeeId + '\'' +
                 ", deptId='" + deptId + '\'' +
                 '}';
+    }
+
+    public static class Builder {
+        private String employeeId;
+        private String deptId;
+
+        public Builder setEmployeeId(String employeeId) {
+            this.employeeId = employeeId;
+            return this;
+        }
+
+        public Builder setContactId(String contactId) {
+            this.deptId = deptId;
+            return this;
+        }
+
+        public Builder copy(EmployeeDepartment employeeDepartment) {
+            this.employeeId = employeeDepartment.employeeId;
+            this.deptId = employeeDepartment.deptId;
+            return this;
+        }
+
+        public EmployeeDepartment build() {
+            return new EmployeeDepartment(this);
+        }
     }
 }
