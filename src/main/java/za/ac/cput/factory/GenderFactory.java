@@ -7,7 +7,7 @@ import za.ac.cput.util.Helper;
 public class GenderFactory
 {
 
-    public static Gender createEmployeeAddress(String genderType, String description)
+    public static Gender createGender(String genderType, String description)
     {
         String genderId= Helper.generateID();
         Gender gender =new Gender .Builder()

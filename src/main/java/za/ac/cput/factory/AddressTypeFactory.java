@@ -5,12 +5,14 @@ import za.ac.cput.util.Helper;
 
 public class AddressTypeFactory {
 
-    public static AddressType createAddressType( String streetName, String postalCode, String areaName)
-    {
-        String addressTypeId= Helper.generateID();
-        AddressType addressType =new AddressType .Builder().setAddressTypeId(addressTypeId).setStreetName(streetName)
-                .setPostalCode(postalCode).setAreaName(areaName).Build();
+    public  static AddressType createAddressType(String streetName, String postalCode,String areaName,String city  ){
 
-        return  addressType;
+        String id = Helper.generateID();
+        AddressType emp=new AddressType.Builder().setAddressTypeId(id).setStreetName(streetName)
+                .setPostalCode(postalCode).setAreaName(areaName).setCity(city ).build();
+        return emp;
+
     }
+
+
 }
