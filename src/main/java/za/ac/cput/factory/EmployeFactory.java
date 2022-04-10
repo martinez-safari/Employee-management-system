@@ -18,8 +18,5 @@ public class EmployeFactory {
 
     }
 
-    public static void main(String[] args) {
-        Employe emp= EmployeFactory.createEmployee("Nolu","Malone");
 
-    }
 }
