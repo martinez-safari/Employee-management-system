@@ -17,8 +17,6 @@ public class Salary
         this.salaryDescription = builder.salaryDescription;
     }
 
-
-
     public String getSalaryId()
     {
         return salaryId;

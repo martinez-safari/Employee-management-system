@@ -45,8 +45,6 @@ public class PayrollRepository implements IPayrollRepository
                 return s;
         }
         return null; */
-
-        //lambda expresions java 8
         Payroll payroll = payrollDB.stream()
                 .filter(p -> p.getPayrollId().equals(payrollId))
                 .findAny()

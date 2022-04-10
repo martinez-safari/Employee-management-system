@@ -24,13 +24,13 @@ class SalaryFactoryTest
         System.out.println(payroll.toString());
         assertNotNull(payroll);
 
-        /* ArrayList<Salary> salary = new ArrayList<>();
+        /*self experimenting ArrayList<Salary> salary = new ArrayList<>();
         salary.add(SalaryFactory.createSalary(100, "Nick"));
         salary.add(SalaryFactory.createSalary(200, "kanon"));
         for (int i = 0; i < salary.size(); i++)
         { //size() is the length of ArrayList students
             System.out.println(salary);
             assertNotNull(salary);
-            */
+         */
     }
 }

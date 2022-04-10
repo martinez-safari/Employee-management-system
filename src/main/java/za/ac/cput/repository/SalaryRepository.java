@@ -44,9 +44,8 @@ public class SalaryRepository implements ISalaryRepository
             if (s.getSalaryId().equals(salaryId))
                 return s;
         }
-        return null; */
-
         //lambda expressions java 8
+        return null; */
         Salary salary = salaryDB.stream()
                 .filter(s -> s.getSalaryId().equals(salaryId))
                 .findAny()
