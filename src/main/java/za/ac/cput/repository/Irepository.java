@@ -1,6 +1,5 @@
 package za.ac.cput.repository;
 
-
 public interface Irepository <Object,ID>
 {
     Object create(Object object);

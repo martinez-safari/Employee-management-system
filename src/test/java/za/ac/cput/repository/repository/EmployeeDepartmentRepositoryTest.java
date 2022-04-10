@@ -12,11 +12,8 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 import za.ac.cput.entity.EmployeeDepartment;
 import za.ac.cput.factory.EmployeeDepartmentFactory;
-
-
 import za.ac.cput.repository.EmployeeDepartmentRepository;
 import za.ac.cput.util.Helper;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 
