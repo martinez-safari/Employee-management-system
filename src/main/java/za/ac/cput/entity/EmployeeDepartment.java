@@ -1,5 +1,12 @@
 package za.ac.cput.entity;
 
+/*
+Employee-management-system.java
+EmployeeDepartment.java
+Author: Martinez Safari 219325332
+Date: 07/04/2022
+ */
+
 public class EmployeeDepartment {
     private String employeeId;
     private String deptId;
@@ -46,7 +53,7 @@ public class EmployeeDepartment {
             return this;
         }
 
-        public Builder setContactId(String contactId) {
+        public Builder setDeptId(String deptId) {
             this.deptId = deptId;
             return this;
         }

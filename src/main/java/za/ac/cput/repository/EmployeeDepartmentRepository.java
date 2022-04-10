@@ -1,7 +1,13 @@
 package za.ac.cput.repository;
 
-import za.ac.cput.entity.EmployeeDepartment;
+/*
+Employee-management-system.java
+EmployeeDepartmentRepository.java
+Author: Martinez Safari 219325332
+Date: 09/04/2022
+ */
 
+import za.ac.cput.entity.EmployeeDepartment;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -35,7 +41,6 @@ public class EmployeeDepartmentRepository implements IEmployeeDepartment {
     public EmployeeDepartment read(String ID) {
         EmployeeDepartment empDept= EmployeeDepartmentDB.stream().
                 filter(e ->e.getEmployeeId().equals(ID))
-               // filter(e ->e.getDeptId().equals(ID))
 
                 .findAny().orElse(null);
         return empDept;

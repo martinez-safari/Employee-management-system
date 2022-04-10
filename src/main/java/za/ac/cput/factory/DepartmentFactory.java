@@ -1,20 +1,26 @@
 package za.ac.cput.factory;
 
+/*
+Employee-management-system.java
+DepartmentFactory.java
+Author: Martinez Safari 219325332
+Date: 07/04/2022
+ */
+
 import za.ac.cput.entity.Department;
 import za.ac.cput.util.Helper;
 
 public class DepartmentFactory {
 
-    // creating department objects
     public static Department createDepartment(String deptId, String deptName, String deptDesc){
-        if(!Helper.isNullorEmpty(deptId) || Helper.isNullorEmpty(deptName) || Helper.isNullorEmpty(deptDesc) )
-            return null;
+        String id= Helper.generateID();
 
-        return new Department.Builder().setDeptId(deptId)
+
+        Department dept= new Department.Builder()
+                .setDeptId(deptId)
                 .setDeptName(deptName)
-                .setDeptDesc(deptDesc)
-                .build();
+                .setDeptDesc(deptDesc).build();
+        return dept;
 
-    }
-
+}
 }

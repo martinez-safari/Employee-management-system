@@ -1,6 +1,6 @@
 /*
 Employee-management-system.java
-Department entity
+Department.java
 Author: Martinez Safari 219325332
 Date: 07/04/2022
  */
