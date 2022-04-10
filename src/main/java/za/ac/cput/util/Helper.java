@@ -9,12 +9,5 @@ public class Helper {
     {
         return UUID.randomUUID().toString();
     }
-    public static String IsValidEmail(String str) {
-        if( EmailValidator.getInstance().isValid(str)){
-            return str;
-        }
-        System.out.println("Please enter correct email");
-        String str2=" Please enter correct email";
-        return str2;
-    }
+
 }

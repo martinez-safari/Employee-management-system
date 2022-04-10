@@ -6,20 +6,20 @@ Student Number 220145547
 Date April 9 2022
  */
 
-import za.ac.cput.entity.Employee;
+import za.ac.cput.entity.Employe;
 import za.ac.cput.util.Helper;
 
-public class EmployeeFactory {
-    public  static Employee createEmployee(String firstName, String lastName  ){
+public class EmployeFactory {
+    public  static Employe createEmployee(String firstName, String lastName  ){
         String id = Helper.generateID();
-        Employee emp=new Employee.Builder().setEmployeeId(id).setFirstName(firstName)
+        Employe emp=new Employe.Builder().setEmployeeId(id).setFirstName(firstName)
                 .setLastName(lastName).build();
         return emp;
 
     }
 
     public static void main(String[] args) {
-        Employee emp=EmployeeFactory.createEmployee("Nolu","Malone");
+        Employe emp= EmployeFactory.createEmployee("Nolu","Malone");
 
     }
 }

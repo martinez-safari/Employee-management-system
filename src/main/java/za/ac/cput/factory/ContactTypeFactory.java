@@ -12,9 +12,9 @@ Date April 9 2022
 public class ContactTypeFactory {
     public static ContactType createContactType(String email, String phoneNumber){
         String id= Helper.generateID();
-        String validEmail= String.valueOf(Helper.IsValidEmail(email));
+        //String validEmail= String.valueOf(Helper.IsValidEmail(email));
 
-        ContactType cntTyp= new ContactType.Builder().setContactId(id).setEmail(validEmail)
+        ContactType cntTyp= new ContactType.Builder().setContactId(id).setEmail(email)
                 .setPhoneNumber(phoneNumber).build();
         return cntTyp;
 }

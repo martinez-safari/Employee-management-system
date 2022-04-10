@@ -6,16 +6,16 @@ Student Number 220145547
 Date April 9 2022
  */
 
-import za.ac.cput.entity.Employee;
+import za.ac.cput.entity.Employe;
 
 import java.util.HashSet;
 import java.util.Set;
 
 public class EmployeeRepository implements IEmployee{
     private static EmployeeRepository repository =null;
-    private Set<Employee> EmployeeDB;
+    private Set<Employe> EmployeeDB;
     private EmployeeRepository(){
-        EmployeeDB= new HashSet<Employee>();
+        EmployeeDB= new HashSet<Employe>();
 
     }
 
@@ -28,7 +28,7 @@ public class EmployeeRepository implements IEmployee{
     }
 
     @Override
-    public Employee create(Employee employee) {
+    public Employe create(Employe employee) {
         boolean success=EmployeeDB.add(employee);
         if(!success)
             return null;
@@ -37,8 +37,8 @@ public class EmployeeRepository implements IEmployee{
     }
 
     @Override
-    public Employee read(String employeeId) {
-        Employee employee=EmployeeDB.stream().
+    public Employe read(String employeeId) {
+        Employe employee=EmployeeDB.stream().
                 filter(e ->e.getEmployeeId().equals(employeeId))
 
                 .findAny().orElse(null);
@@ -46,9 +46,9 @@ public class EmployeeRepository implements IEmployee{
     }
 
     @Override
-    public Employee update(Employee employee) {
+    public Employe update(Employe employee) {
 
-        Employee oldEmployee=read(employee.getEmployeeId());
+        Employe oldEmployee=read(employee.getEmployeeId());
         if (oldEmployee !=null)
         {
 
@@ -63,7 +63,7 @@ public class EmployeeRepository implements IEmployee{
 
     @Override
     public boolean delete(String employeeId) {
-        Employee deleteEmployee= read(employeeId);
+        Employe deleteEmployee= read(employeeId);
         if (deleteEmployee ==null)
         {
             return false;
@@ -74,7 +74,7 @@ public class EmployeeRepository implements IEmployee{
     }
 
     @Override
-    public Set<Employee> getAll() {
+    public Set<Employe> getAll() {
         return EmployeeDB;
     }
 

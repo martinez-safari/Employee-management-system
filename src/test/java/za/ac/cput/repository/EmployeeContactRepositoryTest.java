@@ -35,7 +35,8 @@ class EmployeeContactRepositoryTest {
 
     @Test
     void c_update() {
-        EmployeeContact update =new EmployeeContact.Builder().copy(empContact).setContactId(Helper.generateID()).build();
+        EmployeeContact update =new EmployeeContact.Builder().copy(empContact)
+                .setContactId(Helper.generateID()).build();
         assertNotNull(repository.update(update));
         System.out.println("Updated Entity-"+repository.getAll());
     }

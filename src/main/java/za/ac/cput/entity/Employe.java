@@ -6,14 +6,14 @@ Student Number 220145547
 Date April 9 2022
  */
 
-public class Employee {
+public class Employe {
     private String employeeId;
     private String firstName;
     private String lastName;
 
-    private Employee() {
+    private Employe() {
     }
-    private Employee(Builder builder){
+    private Employe(Builder builder){
         this.firstName= builder.firstName;
         this.lastName= builder.lastName;
         this.employeeId= builder.employeeId;
@@ -74,7 +74,7 @@ public class Employee {
             return this;
         }
 
-        public Builder copy(Employee employee) {
+        public Builder copy(Employe employee) {
             this.firstName = employee.firstName;
             this.lastName = employee.lastName;
             this.employeeId = employee.employeeId;
@@ -82,8 +82,8 @@ public class Employee {
 
         }
 
-        public Employee build() {
-            return new Employee(this);
+        public Employe build() {
+            return new Employe(this);
         }
     }
 }
