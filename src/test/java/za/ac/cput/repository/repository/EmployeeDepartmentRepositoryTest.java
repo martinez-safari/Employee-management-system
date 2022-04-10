@@ -58,6 +58,7 @@ public class EmployeeDepartmentRepositoryTest {
 
     @Test
     void d_getAll() {
+
         System.out.println("Get All Repository contents" + repository.getAll());
     }
 }

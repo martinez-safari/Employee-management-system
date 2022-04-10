@@ -20,7 +20,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class DepartmentRepositoryTest  {
     private static DepartmentRepository repository=DepartmentRepository.getRepository();
     private static Department department= DepartmentFactory
-            .createDepartment("c222","cool", "cool Room");
+            .createDepartment("c123","cool", "cool Room");
 
 
     @Test
