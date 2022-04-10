@@ -1,6 +1,6 @@
 package za.ac.cput.util;
 /* Helper.java
- util for the Helper
+ group uses one helper class in util package
  Author: Taariq Khan (219231141)
  Date: 2 April 2022*/
 import java.util.UUID;
@@ -15,5 +15,6 @@ public class Helper
     {
         return UUID.randomUUID().toString();
     }
+
 }
 
