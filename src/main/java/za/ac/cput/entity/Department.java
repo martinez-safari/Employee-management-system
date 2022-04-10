@@ -3,8 +3,7 @@ package za.ac.cput.entity;
 /*
 Employee-management-system.java
 Department.java
-Author: Martinez Safari
-        219325332
+Author: Martinez Safari 219325332
 Date: 07/04/2022
  */
 

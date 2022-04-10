@@ -1,9 +1,6 @@
 package za.ac.cput.repository;
-/* Irepository.java
- Interface for the Irepository
- Author: Taariq Khan (219231141)
- Date: 2 April 2022
-*/
+
+
 public interface Irepository <Object,ID>
 {
     Object create(Object object);
