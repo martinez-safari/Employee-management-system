@@ -7,18 +7,32 @@ Author: Martinez Safari  219325332
 Date: 07/04/2022
  */
 
-public class EmployeeDepartment {
-    private String employeeId;
-    private String deptId;
 
-    private EmployeeDepartment() {
-    }
+import com.sun.istack.NotNull;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import java.io.Serializable;
+
+@Entity
+@Table(name="EmployeeDepartment")
+public class EmployeeDepartment implements Serializable {
+    @Id
+    @NotNull
+    @Column
+    private String employeeId;
+    @Column private String deptId;
+
+    protected EmployeeDepartment() {}
 
     private EmployeeDepartment(Builder builder) {
         this.employeeId = builder.employeeId;
         this.deptId = builder.deptId;
 
     }
+
 
     public String getEmployeeId() {
         return employeeId;

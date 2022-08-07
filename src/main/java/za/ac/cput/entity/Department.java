@@ -7,13 +7,27 @@ Author: Martinez Safari  219325332
 Date: 07/04/2022
  */
 
-public class Department {
+import com.sun.istack.NotNull;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import java.io.Serializable;
+import java.util.Objects;
+
+@Entity
+@Table(name="Department")
+public class Department implements Serializable {
+    @Id
+    @NotNull
+    @Column
 
     private String deptId;
-    private String deptName;
-    private String deptDesc;
+    @Column private String deptName;
+    @Column private String deptDesc;
 
-
+    protected Department() {}
 
     private Department(Builder builder){
         this.deptId= builder.deptId;
@@ -22,6 +36,8 @@ public class Department {
 
 
     }
+
+
     public String getDeptId() {
         return deptId;
     }
@@ -33,6 +49,8 @@ public class Department {
     public String getDeptDesc() {
         return deptDesc;
     }
+
+
     @Override
     public String toString() {
         return "Department{" +
@@ -41,6 +59,12 @@ public class Department {
                 ", deptDesc='" + deptDesc + '\'' +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(deptId, deptName, deptDesc);
+    }
+
     public static class Builder{
         private String deptId, deptName, deptDesc;
 
